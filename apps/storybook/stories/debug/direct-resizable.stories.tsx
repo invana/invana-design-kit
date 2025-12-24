@@ -3,7 +3,7 @@ import { Meta, StoryObj } from "@storybook/react-vite";
 import { Group, Panel, Separator } from "react-resizable-panels";
 
 const meta: Meta = {
-  title: "Debug/Direct Resizable",
+  title: "ui-kit/others/Direct Resizable",
   parameters: {
     layout: 'fullscreen',
   }
