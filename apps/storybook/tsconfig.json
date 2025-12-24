@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/components": ["../../../packages/ui/src/components"],
+      "@/lib": ["../../../packages/ui/src/lib"],
+      "@/hooks": ["../../../packages/ui/src/hooks"],
+      "@invana/styles": ["../../../packages/ui/src/styles/src"],
+      "@invana/styles/*": ["../../../packages/ui/src/styles/src/*"],
+      "@invana/ui": ["../../packages/ui/src"],
+      "@invana/ui/*": ["../../packages/ui/src/*"],
+      "@invana/themes": ["../../packages/themes/src"],
+      "@invana/themes/*": ["../../packages/themes/src/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "storybook-static"]
+}

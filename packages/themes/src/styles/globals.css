@@ -1,0 +1,8 @@
+/* 1. Import Tailwind first */
+@import "tailwindcss";
+
+/* 2. Define YOUR app's source paths */
+@source "../**/*.{js,ts,jsx,tsx}";
+
+/* 3. Import the shared theme */
+@import "@invana/styling/index.css";

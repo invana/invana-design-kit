@@ -1,0 +1,24 @@
+/* 
+ * Storybook CSS Entry Point
+ * 
+ * Order matters in Tailwind v4:
+ * 1. Import tailwindcss (base framework)
+ * 2. Define @source paths (where to scan for classes)
+ * 3. Import shared theme (extends @theme)
+ * 4. Import all theme variants
+ */
+
+@import "tailwindcss";
+
+/* Define sources BEFORE importing theme */
+@source "../stories/**/*.{js,ts,jsx,tsx,mdx}";
+@source "../../../packages/ui/src/**/*.{js,ts,jsx,tsx}";
+@source "../../../packages/themes/src/**/*.{js,ts,jsx,tsx}";
+
+/* Import the shared design system theme */
+@import "@invana/styling/index.css";
+
+/* Import all theme variants */
+@import "@invana/styling/themes/default.css";
+@import "@invana/styling/themes/tailwind.css";
+@import "@invana/styling/themes/vite.css";
